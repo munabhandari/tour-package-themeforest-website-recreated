@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body .container {
+  max-width: 1000px;
+}
+body header .top-head {
+  background-color: blue;
+}
+body header .top-head .social-media img {
+  display: inline-block;
+  width: 18px;
+  height: auto;
+  margin-left: 5px;
+}
+body header .top-head .social-media img:hover {
+  opacity: 0.7;
+}
+body header .top-head .social-media span {
+  color: #c2c2c2;
+  line-height: 2;
+  font-size: 13px;
+  margin-left: 10px;
+}
+body header .top-head .search-btn {
+  width: 20px;
+  display: inline-block;
+  background: url(https://demo.goodlayers.com/tourpackage/wp-content/themes/tourpackage/images/icon/light/top-search.png) no-repeat right center;
+  border: none;
+  line-height: 2;
+}
+body header .top-head .right-content img {
+  width: 13px;
+  height: auto;
+  margin: 10px;
+}
+body header .top-head .right-content img:hover {
+  opacity: 0.7;
+}
+body header .top-head .right-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+body header .nav-container {
+  background: #000;
+}
+body header .nav-container .logo {
+  height: 29px;
+}
+body header .nav-container .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding: 20px 10px;
+}
+body header .nav-container .navbar-dark .navbar-nav .nav-link.active {
+  background-color: #3489d7;
+}
+body header .nav-container .navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #3489d7;
+  transition: 1s;
+}/*# sourceMappingURL=style.css.map */
