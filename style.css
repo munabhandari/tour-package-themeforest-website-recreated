@@ -1,25 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   color: #111;
+}
+
+h3, h4, h5, h6 {
+  color: #3d3d3d;
 }
 
 h2 {
   font-size: 33px;
 }
 
-d-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
 body {
+  position: relative;
   font-family: "Roboto Condensed", sans-serif;
 }
 body .container {
   max-width: 1000px;
 }
+body header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
 body header .top-head {
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 body header .top-head .social-media img {
   display: inline-block;
@@ -31,7 +38,7 @@ body header .top-head .social-media img:hover {
   opacity: 0.7;
 }
 body header .top-head .social-media span {
-  color: #c2c2c2;
+  color: #939393;
   line-height: 2;
   font-size: 13px;
   margin-left: 10px;
@@ -57,7 +64,7 @@ body header .top-head .right-content a {
   font-size: 13px;
 }
 body header .nav-container {
-  background: #000;
+  background: rgba(0, 0, 0, 0.8);
 }
 body header .nav-container .logo {
   height: 29px;
@@ -74,12 +81,14 @@ body header .nav-container .navbar-dark .navbar-nav .nav-link:hover {
   transition: 1s;
 }
 body main .banner .content-container {
+  height: 560px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
 body main .banner .content-container .banner-content {
+  margin-top: 368px;
   position: absolute;
 }
 body main .banner .content-container .banner-content .travel-with-us h1 {
@@ -97,6 +106,97 @@ body main .banner .content-container .banner-content .travel-with-us p {
   -moz-text-align-last: right;
        text-align-last: right;
   margin-right: 59px;
+}
+body main .banner .content-container .banner-content .travelling-website h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 15px;
+  color: #111;
+  font-size: 45px;
+  font-weight: 100;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+body main .banner .content-container .banner-content .travelling-website p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+body main .banner .content-container .banner-content .device-preview {
+  position: relative;
+}
+body main .banner .content-container .banner-content .device-preview img {
+  position: absolute;
+  bottom: 0;
+}
+body main .banner .content-container .banner-content .device-preview .tablet {
+  right: 0;
+  bottom: -80px;
+}
+body main .banner .content-container .banner-content .device-preview .mobile {
+  right: 200px;
+  bottom: -80px;
+}
+body main .banner .content-container .banner-content .preview-content {
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: -32px;
+}
+body main .banner .content-container .banner-content .preview-content h1 {
+  color: #fff;
+  font-size: 41px;
+  padding: 5px;
+  font-weight: 100;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+}
+body main .banner .content-container .banner-content .preview-content .content-1 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+body main .banner .content-container .banner-content .preview-content .content-2 {
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 100;
+}
+body main .banner .content-container .banner-content .award-content {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+}
+body main .banner .content-container .banner-content .award-content p {
+  color: #638f9b;
+  font-size: 25px;
+  font-weight: lighter;
+}
+body main .banner .content-container .banner-content .award-content h2 {
+  color: #1c5b6d;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+body main .banner .content-container .banner-content .everest-content {
+  position: absolute;
+  bottom: 166px;
+}
+body main .banner .content-container .banner-content .everest-content h2 {
+  background-color: #142d41;
+  font-size: 36px;
+  padding: 5px 15px;
+  font-weight: 100;
+  border-radius: 5px;
+  display: inline-block;
+}
+body main .banner .content-container .banner-content .everest-content p {
+  font-size: 26px;
 }
 body main .theme {
   background-color: #3489d7;
@@ -156,5 +256,27 @@ body main .packages .card .title-bar {
   bottom: 10px;
   left: 10px;
   background-color: #111;
-  width: 90%;
+  width: 94%;
+  font-size: 18px;
+  padding: 7px 15px;
+}
+body main .packages .card .title-bar .currency {
+  color: #3489d7;
+  font-size: 15px !important;
+}
+body main .packages .card-buttom {
+  color: #939393;
+  font-size: 13px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+body main .packages .card-buttom span {
+  font-size: 12px;
+  margin-right: 5px;
+}
+body main .client-review {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }/*# sourceMappingURL=style.css.map */

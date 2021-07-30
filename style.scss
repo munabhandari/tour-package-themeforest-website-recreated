@@ -3,6 +3,7 @@
 @import './style/utility';
 
 body {
+    position: relative;
     font-family: 'Roboto Condensed', sans-serif;
 
     .container {
@@ -11,8 +12,14 @@ body {
 
     //header start..     
     header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+
         .top-head {
-            background-color: blue;
+            background-color: rgba(0, 0, 0, 0.6);
 
             .social-media {
                 img {
@@ -64,7 +71,7 @@ body {
         }
 
         .nav-container {
-            background: #000;
+            background: rgba(0, 0, 0, 0.8);
 
             .logo {
                 height: 29px;
@@ -97,24 +104,27 @@ body {
         //banner section start..
         .banner {
             .content-container {
+                height: 560px;
                 display: flex;
                 position: relative;
                 justify-content: center;
                 align-items: center;
 
                 .banner-content {
+                    margin-top: 368px;
                     position: absolute;
 
-                    .travel-with-us{
-                        h1{
+                    .travel-with-us {
+                        h1 {
                             background-color: $white;
                             border-radius: 8px;
                             padding: 15px;
                             color: $dark;
                             font-size: 68px;
-                            font-weight: 100;                           
+                            font-weight: 100;
                         }
-                        p{
+
+                        p {
                             font-size: 39px;
                             color: $darker-grey;
                             font-weight: 100;
@@ -122,10 +132,120 @@ body {
                             margin-right: 59px;
                         }
                     }
+
+                    .travelling-website {
+                        h1 {
+                            background-color: rgba(255, 255, 255, 0.8);
+                            padding: 5px 15px;
+                            color: $dark;
+                            font-size: 45px;
+                            font-weight: 100;
+                            display: inline-block;
+                            margin-bottom: 15px;
+
+                        }
+
+                        p {
+                            background-color: rgba(0, 0, 0, 0.7);
+                            padding: 10px;
+                            padding-left: 40px;
+                            padding-right: 20px;
+                            font-size: 20px;
+                            color: $white;
+                            font-weight: 300;
+                            display: inline-block;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    .device-preview {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                        }
+
+                        .tablet {
+                            right: 0;
+                            bottom: -80px;
+
+                        }
+
+                        .mobile {
+                            right: 200px;
+                            bottom: -80px;
+                        }
+                    }
+
+                    .preview-content {
+                        color: $white;
+                        text-align: right;
+                        position: absolute;
+                        right: 0px;
+                        bottom: -32px;
+
+                        h1 {
+                            color: $white;
+                            font-size: 41px;
+                            padding: 5px;
+                            font-weight: 100;
+                            border-radius: 5px;
+                            background-color: $dark-grey;
+                        }
+
+                        .content-1 {
+                            font-size: 22px;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+
+                        }
+
+                        .content-2 {
+                            font-size: 44px;
+                            font-style: italic;
+                            font-weight: 100;
+                        }
+                    }
+
+                    .award-content {
+                        position: absolute;
+                        bottom: 40px;
+                        text-align: center;
+
+                        p {
+                            color: $light-green;
+                            font-size: 25px;
+                            font-weight: lighter;
+                        }
+
+                        h2 {
+                            color: $dark-green;
+                            font-size: 32px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+
+                        }
+                    }
+                    .everest-content{
+                        position: absolute;
+                        bottom: 166px;
+                        h2{
+                            background-color: $blue-dark;
+                            font-size: 36px;
+                            padding: 5px 15px;
+                            font-weight: 100;
+                            border-radius: 5px;
+                            display: inline-block;
+                        }
+                        p{
+                            font-size: 26px;
+                        }
+                    }
                 }
             }
-        }
 
+        }
         //banner section end
 
         //theme start.. 
@@ -133,7 +253,7 @@ body {
             background-color: $light-blue;
             margin-bottom: 30px;
             border: 5px solid #3876ae;
-            ;
+            
             position: relative;
 
             h2 {
@@ -206,11 +326,40 @@ body {
                     bottom: 10px;
                     left: 10px;
                     background-color: $dark;
-                    width: 90%;
+                    width: 94%;
+                    font-size: 18px;
+                    padding: 7px 15px;
+
+                    .currency {
+                        color: $light-blue;
+                        font-size: 15px !important;
+
+                    }
                 }
             }
 
+            .card-buttom {
+                color: $light-grey;
+                font-size: 13px;
+                font-weight: 550;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+
+                span {
+                    font-size: 12px;
+                    margin-right: 5px;
+                }
+            }
         }
+
+        .client-review {
+            background-color: $bg-light;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+
+            h2 {}
+        }
+
 
     }
 }
