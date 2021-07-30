@@ -3,12 +3,22 @@ h1, h2 {
   color: #111;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h6 {
   color: #3d3d3d;
 }
 
 h2 {
   font-size: 33px;
+}
+
+h5 {
+  font-size: 20px;
+  color: #3489d7;
+}
+
+.f-size {
+  color: #4c4c4c;
+  font-size: 14px;
 }
 
 body {
@@ -83,7 +93,8 @@ body header .nav-container .navbar-dark .navbar-nav .nav-link:hover {
 body main .banner [data-bs-slide] {
   margin-top: 98px;
 }
-body main .banner .carousel-control-prev-icon, body main .banner .carousel-control-next-icon {
+body main .banner .carousel-control-prev-icon,
+body main .banner .carousel-control-next-icon {
   background-size: 200% 100%;
   height: 50px;
 }
@@ -332,10 +343,6 @@ body main .client-review .img-box {
 body main .client-review .img-box img {
   width: 100%;
 }
-body main .client-review .content p {
-  color: #4c4c4c;
-  font-size: 14px;
-}
 body main .client-review .content i {
   color: #3d3d3d;
   font-size: 15px;
@@ -353,4 +360,24 @@ body main .client-review .carousel-inner .carousel-item {
   font-style: italic;
   font-size: 14px;
   padding: 15px;
+}
+body main .featured-trip i {
+  font-size: 23px;
+  color: #3489d7;
+  margin-right: 15px;
+}
+body main .featured-trip iframe {
+  width: 100%;
+  height: 200px;
+  padding: 12px 0px;
+}
+body main .featured-trip .tips .img-tips {
+  margin-right: 5px;
+}
+body main .featured-trip .tips .img-tipsimg:hover {
+  opacity: 0.8;
+}
+body main .featured-trip .tips p {
+  color: #b4b4b4;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

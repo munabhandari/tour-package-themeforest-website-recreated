@@ -99,24 +99,28 @@ body {
 
     //header end
 
-    main { 
+    main {
+
         //banner section start..
         .banner {
-            [data-bs-slide]{
+            [data-bs-slide] {
                 margin-top: 98px;
             }
-            .carousel-control-prev-icon, .carousel-control-next-icon{
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
                 background-size: 200% 100%;
-                    height: 50px;
+                height: 50px;
             }
-            .carousel-indicators [data-bs-target]
-            {  
+
+            .carousel-indicators [data-bs-target] {
                 height: 7px;
                 width: 7px;
                 border-radius: 100%;
                 background-color: transparent;
                 border: 3px solid $white;
             }
+
             .content-container {
                 height: 560px;
                 display: flex;
@@ -241,10 +245,12 @@ body {
 
                         }
                     }
-                    .everest-content{
+
+                    .everest-content {
                         position: absolute;
                         bottom: 166px;
-                        h2{
+
+                        h2 {
                             background-color: $blue-dark;
                             font-size: 36px;
                             padding: 5px 15px;
@@ -252,7 +258,8 @@ body {
                             border-radius: 5px;
                             display: inline-block;
                         }
-                        p{
+
+                        p {
                             font-size: 26px;
                         }
                     }
@@ -260,6 +267,7 @@ body {
             }
 
         }
+
         //banner section end
 
         //theme start.. 
@@ -267,7 +275,7 @@ body {
             background-color: $light-blue;
             margin-bottom: 30px;
             border: 5px solid #3876ae;
-            
+
             position: relative;
 
             h2 {
@@ -296,15 +304,16 @@ body {
             }
 
         }
+
         //theme end.. 
 
-         //packages section start..
+        //packages section start..
         .packages {
-            .learn-more{
-                &::after{
-                    content: ' ';                  
+            .learn-more {
+                &::after {
+                    content: ' ';
                     border: 10px solid black;
-                    display: block;                 
+                    display: block;
                     border-top-color: transparent;
                     border-bottom-color: transparent;
                     border-right-color: transparent;
@@ -315,9 +324,11 @@ body {
                     top: 30px;
                 }
             }
-            .line{
+
+            .line {
                 position: relative;
-                &::after{
+
+                &::after {
                     border-top: 1px solid rgb(228, 210, 210);
                     display: block;
                     content: ' ';
@@ -393,6 +404,7 @@ body {
                 }
             }
         }
+
         //packages section end
 
         //client-review section start..
@@ -401,49 +413,79 @@ body {
             border-top: 1px solid #ebebeb;
             border-bottom: 1px solid #ebebeb;
 
-            
-                i{
-                    color: #3389d7;
-                    margin-right: 10px;
-                    font-size: 23px;
-                    line-height: 27px;
-                }
-                .img-box{
-                    float: start;                   
-                    width: 40%;                  
-                    img{
-                        width: 100%;                        
-                    }
-                }
-                .content{
-                    p{
-                        color: $darker-grey;
-                        font-size: 14px;
-                    }
-                    i{
-                        color: $dark-grey;
-                        font-size: 15px;                      
-                    }
-                    a{
-                        color: $light-blue;
-                        text-decoration: none;  
-                    }
-                }
-                .carousel-inner{
-                    background-color: $white;
-                    .carousel-item{
-                        border: 1px solid $grey;
-                        color: $grey-light;
-                        font-style: italic;
-                        font-size: 14px;
-                        padding: 15px;
-                    }
-                }  
-                
-                
 
+            i {
+                color: #3389d7;
+                margin-right: 10px;
+                font-size: 23px;
+                line-height: 27px;
+            }
+
+            .img-box {
+                float: start;
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                i {
+                    color: $dark-grey;
+                    font-size: 15px;
+                }
+
+                a {
+                    color: $light-blue;
+                    text-decoration: none;
+                }
+            }
+
+            .carousel-inner {
+                background-color: $white;
+
+                .carousel-item {
+                    border: 1px solid $grey;
+                    color: $grey-light;
+                    font-style: italic;
+                    font-size: 14px;
+                    padding: 15px;
+                }
+            }
         }
-       //client-review section end
+
+        //client-review section end
+
+        .featured-trip {
+            i {
+                font-size: 23px;
+                color: $light-blue;
+                margin-right: 15px;
+            }
+
+            iframe {
+                width: 100%;
+                height: 200px;
+                padding: 12px 0px;
+            }
+
+            .tips {
+                .img-tips {
+                    margin-right: 5px;
+                    &img:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                p {
+                    color: $light-ash;
+                    font-size: 12px;
+
+                }
+
+            }
+        }
 
     }
 }
