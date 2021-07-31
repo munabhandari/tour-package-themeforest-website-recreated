@@ -32,6 +32,47 @@ h5 {
 .pages main .banner * {
   color: #fff;
 }
+.pages main .table th {
+  color: #666;
+  background-color: #fdfdfd;
+  font-size: 13px;
+}
+.pages main .table td {
+  font-weight: lighter;
+  font-size: 13px;
+}
+.pages main .dropcaps p {
+  font-size: 14px;
+  color: #505050;
+}
+.pages main .dropcaps .first-paragraph::first-letter {
+  font-size: 200%;
+  color: #4c4c4c;
+}
+.pages main .dropcaps .second-paragraph::first-letter {
+  font-size: 200%;
+  background-color: #4c4c4c;
+  color: #fff;
+  border-radius: 100%;
+  padding: 10px;
+}
+.pages main .list li {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.pages main .list-items .short-codes .list-group .list-group-item {
+  background-color: #f7f7f7;
+  border: none;
+  margin-bottom: 3px;
+  color: #3489d7;
+}
+.pages main .list-items .short-codes .list-group a {
+  text-decoration: none;
+}
+.pages main .list-items .short-codes .list-group a:hover {
+  opacity: 0.6;
+}
+
 body {
   position: relative;
   font-family: "Roboto Condensed", sans-serif;

@@ -13,8 +13,61 @@
                 color: $white;
             }
         }
-        .main-content{
-           
+        .table{
+            th{
+                color: #666;
+                background-color: #fdfdfd;
+                font-size: 13px;
+            }
+            td{
+                font-weight: lighter;
+                font-size: 13px;
+            }
+        }
+        .dropcaps{
+            p{
+                font-size: 14px;
+                color: $grey-light;               
+            }
+            .first-paragraph{              
+                    &::first-letter {
+                        font-size: 200%;
+                        color: $darker-grey;
+                    }
+            }
+            .second-paragraph{
+                &::first-letter {
+                    font-size: 200%;
+                    background-color: $darker-grey;
+                    color: $white;
+                    border-radius: 100%;
+                    padding: 10px;           
+                }
+            } 
+        }
+        .list{
+            li{
+                font-size: 14px;
+                color: $darker-grey;   
+            }
+        }
+        .list-items{
+            .short-codes{
+                .list-group{
+                    .list-group-item{
+                    background-color: #f7f7f7;
+                    border: none;
+                    margin-bottom: 3px;
+                   color: $light-blue;              
+                    }
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
         }
     }
 }
