@@ -315,7 +315,7 @@ body main .packages .card .title-bar .currency {
   font-size: 15px !important;
 }
 body main .packages .card-buttom {
-  color: #c2c2c2;
+  color: #4c4c4c;
   font-size: 13px;
   font-weight: 550;
   letter-spacing: 1px;
@@ -361,23 +361,54 @@ body main .client-review .carousel-inner .carousel-item {
   font-size: 14px;
   padding: 15px;
 }
-body main .featured-trip i {
+body main .featured-tips i {
   font-size: 23px;
   color: #3489d7;
   margin-right: 15px;
 }
-body main .featured-trip iframe {
+body main .featured-tips iframe {
   width: 100%;
   height: 200px;
   padding: 12px 0px;
 }
-body main .featured-trip .tips .img-tips {
-  margin-right: 5px;
+body main .featured-tips .tips .img-tips {
+  padding-right: 10px;
 }
-body main .featured-trip .tips .img-tipsimg:hover {
-  opacity: 0.8;
+body main .featured-tips .tips .img-tips:hover {
+  opacity: 0.6;
 }
-body main .featured-trip .tips p {
+body main .featured-tips .tips .img-tips img {
+  border: 4px solid #eee6e6;
+}
+body main .featured-tips .tips p {
   color: #b4b4b4;
   font-size: 12px;
+}
+body main .featured-tips .form-package {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border: 1px solid #e1e1e1;
+}
+body main .featured-tips .form-package input {
+  width: 100%;
+  display: block;
+  border: 1px solid #e1e1e1;
+  height: 35px;
+  line-height: 1px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+body main .featured-tips .form-package input::-moz-placeholder {
+  color: #505050;
+}
+body main .featured-tips .form-package input:-ms-input-placeholder {
+  color: #505050;
+}
+body main .featured-tips .form-package input::placeholder {
+  color: #505050;
+}
+body main .featured-tips .form-package input[type=submit] {
+  background-color: #e9513c;
+  color: #fff;
+  border-color: #ae4030;
 }/*# sourceMappingURL=style.css.map */

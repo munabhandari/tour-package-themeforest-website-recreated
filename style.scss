@@ -392,7 +392,7 @@ body {
             }
 
             .card-buttom {
-                color: $light-grey;
+                color: $darker-grey;
                 font-size: 13px;
                 font-weight: 550;
                 letter-spacing: 1px;
@@ -457,7 +457,7 @@ body {
 
         //client-review section end
 
-        .featured-trip {
+        .featured-tips {
             i {
                 font-size: 23px;
                 color: $light-blue;
@@ -472,9 +472,13 @@ body {
 
             .tips {
                 .img-tips {
-                    margin-right: 5px;
-                    &img:hover {
-                        opacity: 0.8;
+                    padding-right: 10px;
+                    &:hover {
+                        opacity: 0.6;             
+                    }
+                    img{
+
+                        border: 4px solid rgb(238, 230, 230);
                     }
                 }
 
@@ -485,6 +489,28 @@ body {
                 }
 
             }
+            .form-package{
+               background-color: $bg-light;
+               padding: 25px;
+               border: 1px solid $grey;
+               input{
+                   width: 100%;
+                   display: block;
+                   border: 1px solid $grey;
+                   height: 35px;
+                   line-height: 1px;
+                   padding: 10px;
+                   margin-bottom: 10px;
+                   &::placeholder{
+                       color: $grey-light;                       
+                   }
+                   &[type=submit]{
+                       background-color: $orange;
+                       color: $white;
+                       border-color: #ae4030;
+                   }
+               }
+           }    
         }
 
     }
