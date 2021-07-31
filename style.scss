@@ -457,6 +457,7 @@ body {
 
         //client-review section end
 
+        //featured-tips section start..
         .featured-tips {
             i {
                 font-size: 23px;
@@ -473,10 +474,12 @@ body {
             .tips {
                 .img-tips {
                     padding-right: 10px;
+
                     &:hover {
-                        opacity: 0.6;             
+                        opacity: 0.6;
                     }
-                    img{
+
+                    img {
 
                         border: 4px solid rgb(238, 230, 230);
                     }
@@ -489,29 +492,132 @@ body {
                 }
 
             }
-            .form-package{
-               background-color: $bg-light;
-               padding: 25px;
-               border: 1px solid $grey;
-               input{
-                   width: 100%;
-                   display: block;
-                   border: 1px solid $grey;
-                   height: 35px;
-                   line-height: 1px;
-                   padding: 10px;
-                   margin-bottom: 10px;
-                   &::placeholder{
-                       color: $grey-light;                       
-                   }
-                   &[type=submit]{
-                       background-color: $orange;
-                       color: $white;
-                       border-color: #ae4030;
-                   }
-               }
-           }    
+
+            .form-package {
+                background-color: $bg-light;
+                padding: 25px;
+                border: 1px solid $grey;
+
+                input {
+                    width: 100%;
+                    display: block;
+                    border: 1px solid $grey;
+                    height: 35px;
+                    line-height: 1px;
+                    padding: 10px;
+                    margin-bottom: 10px;
+
+                    &::placeholder {
+                        color: $light-ash;
+                    }
+
+                    &[type=submit] {
+                        background-color: $orange;
+                        color: $white;
+                        border-color: #ae4030;
+                    }
+                }
+            }
+        }
+    }
+
+    //featured-tips section end
+
+    //footer section start..
+    footer {
+        background-color: $light-dark;
+
+        .footer-top {
+            .footer-col-first {
+                .logo {
+                    height: 29px;
+                }
+
+                p {
+                    color: $light-ash;
+                    font-size: 15px;
+                    padding: 10px 0px;
+                }
+            }
+
+            .footer-col-second {
+                h4 {
+                    color: $light-blue;
+                    text-transform: uppercase;
+                }
+
+                .deals {
+                    .img-deals {
+                        padding-right: 10px;
+
+                        img {
+                            width: 50px;
+                            border: 4px solid rgb(84, 82, 82);
+                        }
+                    }
+
+                    .col-right {
+                        h5 {
+                            color: $white;
+                        }
+
+                        span {
+                            color: $orange;
+                        }
+                    }
+
+                    p {
+                        color: $light-ash;
+                        font-size: 12px;
+                        font-weight: bold;
+
+                    }
+                }
+
+            }
+
+            .footer-col-third {
+                .card {
+                    * {
+
+                        color: white;
+                    }
+                    $color: rgba(#3389d7, 0.8);
+                    $color2: rgba(#d73f33, 0.8);
+                    border-radius: 20px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-origin: border-box;
+                    &.madrid {
+                        background-image: linear-gradient(0deg, $color, $color), url(https://a6e8z9v6.stackpathcdn.com/tourpackage/wp-content/uploads/2018/05/Fotolia_44732079_Subscription_Monthly_XL-300x210.jpg);
+                    }
+
+                    &.san-francisco {
+                        background-image: linear-gradient(0deg, $color2, $color2), url(https://a6e8z9v6.stackpathcdn.com/tourpackage/wp-content/uploads/2013/03/photodune-4791527-golden-gate-bridge-m.jpg);
+
+                    }
+                }
+            }
         }
 
+        hr {
+            color: $grey-light;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-weight: lighter;
+            font-size: 14px;
+
+            p {
+                color: $white;
+
+                span {
+                    color: $light-ash;
+                }
+            }
+        }
     }
+
+    //footer section end  
 }
