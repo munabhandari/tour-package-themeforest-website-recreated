@@ -9,60 +9,83 @@
             background-image: linear-gradient(0deg, $color, $color), url(//a6e8z9v6.stackpathcdn.com/tourpackage/wp-content/themes/tourpackage/images/default-header-background.jpg);
             height: 238px;
             padding-top: 120px;
+
             * {
                 color: $white;
             }
         }
-        .table{
-            th{
+
+        .table {
+            th {
                 color: #666;
                 background-color: #fdfdfd;
                 font-size: 13px;
             }
-            td{
+
+            td {
                 font-weight: lighter;
                 font-size: 13px;
             }
         }
-        .dropcaps{
-            p{
+
+        .dropcaps {
+            p {
                 font-size: 14px;
-                color: $grey-light;               
+                color: $grey-light;
             }
-            .first-paragraph{              
-                    &::first-letter {
-                        font-size: 200%;
-                        color: $darker-grey;
-                    }
+
+            .first-letter {
+                color: $darker-grey;
+                float: left;
+                font-family: Georgia;
+
+                line-height: 30px;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-top: 5px; 
             }
-            .second-paragraph{
-                &::first-letter {
-                    font-size: 200%;
+
+            .first-paragraph {
+                .first-letter {
+                    font-size: 29px;
+                    color: $darker-grey; 
+                }
+            }
+
+            .second-paragraph {
+                .first-letter {
+                    font-size: 18px;
+                    border-radius: 100%;
                     background-color: $darker-grey;
                     color: $white;
-                    border-radius: 100%;
-                    padding: 10px;           
+
                 }
-            } 
-        }
-        .list{
-            li{
-                font-size: 14px;
-                color: $darker-grey;   
             }
         }
-        .list-items{
-            .short-codes{
-                .list-group{
-                    .list-group-item{
-                    background-color: #f7f7f7;
-                    border: none;
-                    margin-bottom: 3px;
-                   color: $light-blue;              
+
+        .list {
+            li {
+                font-size: 14px;
+                color: $darker-grey;
+            }
+        }
+
+        .list-items {
+            .short-codes {
+                .list-group {
+                    .list-group-item {
+                        background-color: #f7f7f7;
+                        border: none;
+                        margin-bottom: 3px;
+                        color: $light-blue;
                     }
-                    a{
+
+                    a {
                         text-decoration: none;
-                        &:hover{
+
+                        &:hover {
                             opacity: 0.6;
                         }
                     }

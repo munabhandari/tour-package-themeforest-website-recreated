@@ -45,16 +45,26 @@ h5 {
   font-size: 14px;
   color: #505050;
 }
-.pages main .dropcaps .first-paragraph::first-letter {
-  font-size: 200%;
+.pages main .dropcaps .first-letter {
+  color: #4c4c4c;
+  float: left;
+  font-family: Georgia;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.pages main .dropcaps .first-paragraph .first-letter {
+  font-size: 29px;
   color: #4c4c4c;
 }
-.pages main .dropcaps .second-paragraph::first-letter {
-  font-size: 200%;
+.pages main .dropcaps .second-paragraph .first-letter {
+  font-size: 18px;
+  border-radius: 100%;
   background-color: #4c4c4c;
   color: #fff;
-  border-radius: 100%;
-  padding: 10px;
 }
 .pages main .list li {
   font-size: 14px;
