@@ -1,0 +1,22 @@
+@media screen and (max-width: 480px) {
+    body {
+
+        header {
+            z-index: 2;
+        }
+
+        .banner{
+            .content-container{
+                img{
+                    width: auto !important;
+                }
+            }
+            .travelling-website{
+                    padding-top: 230px;
+            }
+        }
+        main .theme button{
+            position: static;
+        }
+    }
+}

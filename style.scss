@@ -3,6 +3,7 @@
 @import './style/utility';
 @import './style/pages';
 
+
 body {
     position: relative;
     font-family: 'Roboto Condensed', sans-serif;
@@ -621,3 +622,4 @@ body {
 
     //footer section end  
 }
+@import './style/responsive';
