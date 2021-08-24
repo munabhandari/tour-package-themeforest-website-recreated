@@ -398,12 +398,13 @@ body main .client-review ul {
   padding: 0;
 }
 body main .client-review ul li {
+  margin-top: 5px;
   list-style: none;
-  padding-left: 10px;
 }
 body main .client-review ul li::before {
   content: "";
   font-family: "Font Awesome 5 Free";
+  margin-right: 8px;
 }
 body main .client-review i {
   color: #3389d7;

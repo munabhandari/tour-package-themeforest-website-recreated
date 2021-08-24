@@ -419,12 +419,12 @@ body {
                 margin: 0;
                 padding: 0;
                 li{
+                    margin-top: 5px;
                     list-style: none;
-                    padding-left: 10px;
                     &::before{
                         content: "\f118";
                         font-family: "Font Awesome 5 Free";
-
+                        margin-right: 8px;
                     }
                     
                 }
