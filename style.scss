@@ -415,6 +415,20 @@ body {
             border-top: 1px solid #ebebeb;
             border-bottom: 1px solid #ebebeb;
 
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding-left: 10px;
+                    &::before{
+                        content: "\f118";
+                        font-family: "Font Awesome 5 Free";
+
+                    }
+                    
+                }
+            }
 
             i {
                 color: #3389d7;
@@ -446,13 +460,66 @@ body {
 
             .carousel-inner {
                 background-color: $white;
+                position: relative;
+
+                .indicators {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    z-index: 5;
+
+                    button {
+                        border-radius: 100%;
+                        height: 10px;
+                        width: 10px;
+                        display: inline-block;
+                    }
+                }
 
                 .carousel-item {
-                    border: 1px solid $grey;
-                    color: $grey-light;
-                    font-style: italic;
-                    font-size: 14px;
-                    padding: 15px;
+                    text-align: right;
+
+                    p:first-child {
+                        border: 1px solid $grey;
+                        color: $grey-light;
+                        font-style: italic;
+                        font-size: 14px;
+                        padding: 15px;
+                        margin: 0;
+                    }
+
+                    .bottom {
+                        background-color: $dark-grey;
+                        margin: 0;
+                        padding: 5px;
+                        padding-left: 45px;
+                        padding-right: 25px;
+                        position: relative;
+
+                        h5 {
+                            font-size: 20px;
+                        }
+
+                        * {
+
+                            color: $grey;
+                        }
+
+                        &::after {
+                            content: ' ';
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-color: $light-grey;
+                            border-width: 18px 18px 0 0;
+
+                            position: absolute;
+                            right: 2px;
+                            top: 0;
+                            border-right-color: transparent;
+                        }
+                    }
                 }
             }
         }
@@ -583,12 +650,14 @@ body {
                     * {
                         color: white;
                     }
+
                     $color: rgba(#3389d7, 0.8);
                     $color2: rgba(#d73f33, 0.8);
                     border-radius: 20px;
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-origin: border-box;
+
                     &.madrid {
                         background-image: linear-gradient(0deg, $color, $color), url(https://a6e8z9v6.stackpathcdn.com/tourpackage/wp-content/uploads/2018/05/Fotolia_44732079_Subscription_Monthly_XL-300x210.jpg);
                     }
@@ -622,4 +691,5 @@ body {
 
     //footer section end  
 }
+
 @import './style/responsive';
